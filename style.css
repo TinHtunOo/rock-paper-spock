@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Lato, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: rgb(141, 142, 143);
+}
+
+h1 {
+  background-color: dodgerblue;
+  padding: 30px;
+  border-radius: 10px 10px 0 0;
+  color: rgb(249, 241, 241);
+}
+
+.container {
+  box-shadow: 0 10px 15px -5px ;
+  border-radius: 10px;
+}
+
+.game-container {
+  padding: 30px 30px 0 30px ;
+  
+}
+
+.player-status, .computer-status {
+  margin-bottom: 20px;
+  color: rgb(35, 34, 34);
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  color: rgb(35, 34, 34);
+}
+
+.player-icon {
+  color: dodgerblue;
+}
+
+.computer-icon {
+  color: rgb(179, 45, 45);
+}
+
+
+.player-choice {
+  display: inline-block;
+  color: dodgerblue;
+  width: fit-content;
+}
+
+.computer-choice {
+  display: inline-block;
+  color: rgb(179, 45, 45);
+  width: fit-content;
+}
+
+.fa-arrows-rotate {
+  font-size: 3rem;
+  color: rgb(35, 34, 34);
+  padding: 30px;
+  margin: auto;
+}
+
+h2 { 
+  text-align: center;
+  padding-bottom: 30px;
+  color: green;
+  font-size: 3rem;
+  
+}
+
+.fa-solid {
+  cursor: pointer;
+  user-select: none;
+}
+
+.selected  {
+  color: rgb(35, 34, 34);
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 430px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+    border-radius: 0;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h1 {
+    border-radius: 0;
+  }
+
+  .player-status, .computer-status {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    
+  }
+
+  .game-icon, .fa-arrows-rotate { font-size: 2rem; }
+
+  h2 { font-size: 2.5rem; }
+
+}
